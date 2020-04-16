@@ -17,6 +17,9 @@
           solo
           flat
           v-model="input"
+          auto-grow
+          autofocus
+          full-width
         ></v-textarea>
       </v-col>
       <v-col sm="6" cols="12" :style="{backgroundColor:output?'#f1f1f1':'#fff'}">
@@ -100,7 +103,7 @@
 </script>
 <style scoped>
   .c-tool-bar{
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #eee;
     height: 40px;
     line-height: 40px;
     font-weight: 800;
@@ -109,6 +112,6 @@
   .c-output{
     height: 100%; 
     padding: 10px 15px;
-    border-left: 1px solid #f1f1f1; 
+    border-left: 1px solid #eee; 
   }
 </style>

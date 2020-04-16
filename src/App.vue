@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar
       app
-      color="#e265c7"
+      color="#cb62b4"
       dark
       dense
     > 
@@ -32,3 +32,9 @@ export default {
   }),
 };
 </script>
+<style >
+  .v-input__append-inner{
+    align-self: start !important;
+    margin-top:10px !important;
+  }
+</style>
