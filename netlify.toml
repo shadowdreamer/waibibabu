@@ -1,5 +1,5 @@
 [build]
-publish = ".output"
+publish = ".output/public"
 command = "pnpm run generate"
 
 [build.environment]
