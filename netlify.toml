@@ -1,0 +1,11 @@
+[build]
+publish = ".output"
+command = "pnpm run generate"
+
+[build.environment]
+NODE_VERSION = "22"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
