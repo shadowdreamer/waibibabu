@@ -1,0 +1,11 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "noImplicitAny":false,
+    "moduleResolution": "node",
+    "module": "ESNext"
+  },
+  "vueCompilerOptions": {
+ 		"plugins": ["@vue/language-plugin-pug"]
+ 	}
+}
