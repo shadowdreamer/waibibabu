@@ -44,9 +44,8 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'node-server',
     routeRules: {
-     '/': {
-       prerender: true,
-     } 
+     '/': { prerender: true, } ,
+     'gugugaga': { prerender: true, } ,
     },
     esbuild: {
       options: {
