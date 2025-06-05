@@ -1,11 +1,11 @@
 <template lang="pug">
- v-card
+v-card
   v-row(no-gutters class="c-tool-bar")
-    v-col(cols="5" class="text-center") {{encode?"文字":"歪比吧卜"}}
+    v-col(cols="5" class="text-center") {{encode?"文字":"咕咕嘎嘎"}}
     v-col(cols="2" class="text-center")
       v-btn(icon variant="plain" @click="encode=!encode")
         v-icon mdi-cached
-    v-col(cols="5" class="text-center") {{encode?"歪比吧卜":"文字"}}
+    v-col(cols="5" class="text-center") {{encode?"咕咕嘎嘎":"文字"}}
   v-row(class="md-12" no-gutters)
     v-col(sm="6" cols="12" class='px-4')
       v-textarea(clearable variant="plain" v-model="input" auto-grow autofocus full-width)
@@ -17,13 +17,13 @@
             v-icon mdi-content-copy
 </template>
 <script setup lang="ts">
-const title = useState('title', () => '歪比吧卜')
+const title = useState('title')
 onMounted(()=>{
-  title.value = '歪比吧卜';
+  title.value = '咕咕嘎嘎';
 })
 useSeoMeta({
-  title: '歪比吧卜 | 加密通信',
-  description: '歪比吧卜',
+  title: '咕咕嘎嘎 | 加密通信',
+  description: '咕咕嘎嘎',
 })
 const encode = ref(true);
 const input = ref("");
@@ -31,9 +31,9 @@ import { useClipboard } from '@vueuse/core'
 const { copy } = useClipboard({ source: () => output.value })
 const output = computed(() => {
   if (encode.value) {
-    return decodeWabibabu(input.value);
+    return encodeWithPairsCompressed(input.value);
   } else {
-    return encodeWabibabu(input.value);}
+    return decodeWithPairsCompressed(input.value);}
 })
 
 </script>
