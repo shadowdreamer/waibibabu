@@ -12,7 +12,7 @@
   "devDependencies": {
     "@vue/language-plugin-pug": "^2.2.0",
     "consola": "^3.3.1",
-    "nuxt": "^3.15.0",
+    "nuxt": "^3.19.0",
     "pug": "^3.0.3",
     "typescript": "^5.7.2",
     "vite-plugin-vuetify": "^2.1.0",
