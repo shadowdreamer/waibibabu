@@ -31,6 +31,10 @@ const routes = [
   {
     path: '/gugugaga',
     name:'咕咕嘎嘎',
+  },
+  {
+    path: '/oho',
+    name:'哦齁齁！！！',
   }
 ]
 </script>

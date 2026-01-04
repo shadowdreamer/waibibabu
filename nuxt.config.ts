@@ -46,6 +46,7 @@ export default defineNuxtConfig({
     routeRules: {
      '/': { prerender: true, } ,
      'gugugaga': { prerender: true, } ,
+     'oho': { prerender: true, } ,
     },
     esbuild: {
       options: {
